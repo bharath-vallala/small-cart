@@ -18,6 +18,22 @@ import {withRouter} from "react-router-dom"
     }
 
 
+    componentDidMount(){
+        const value="12345a"
+        for(let i=0;i<=value.length;i++){
+            console.log(value[i]); 
+            if(value[i]=== 1 || 2 || 3 || 4){
+                console.log("number");
+            }
+
+
+        }
+
+
+
+    }
+
+
     OnSubmit1=(e)=>{
        e.preventDefault();
        this.props.loginUser(this.state)
